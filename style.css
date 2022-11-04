@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#banner
+{
+    background: linear-gradient(rgba(0,0,0,0.5),#009688),url("imgs/banner.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.logo
+{
+    margin-top:2rem ;
+    margin-left: 4rem;
+    width: 150px;
+    position: absolute;
+}
+.banner-text
+{
+    text-align: center;
+    color: white;
+    padding: 12rem;
+}
+.banner-text h1{
+    font-family: 'Xanh Mono', 'monospace';
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.banner-text p{
+    padding:2rem 0px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.banner-btn
+{
+    margin: 40px auto 0px;
+}
+.banner-btn a{
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    background-color: #009688;
+    padding: 5px;
+    border: 1px solid white;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+   transition: 0.5s;
+}
+.banner-btn a span
+{
+    width: 0;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1; 
+    transition: 0.5s;
+}
+.banner-btn a:hover span
+{
+width: 100%;
+}
+.banner-btn a:hover
+{
+color: black;
+
+}
