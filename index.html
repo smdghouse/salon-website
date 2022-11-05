@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>grean saloon</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -22,5 +21,39 @@
             </div>
         </div>
     </section>
+    <div id="sidenav">
+        <nav>
+            <ul id="menu">
+                <li><a href="#">home</a> </li>
+                <li><a href="#">features</a> </li>
+                <li><a href="#">service</a> </li>
+                <li><a href="#">testimonial</a> </li>
+                <li><a href="#"> contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-btn">
+        <img src="imgs/menu.png" id="menupng">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menu-btn")
+        var sidenav = document.getElementById("sidenav")
+        var img =  document.getElementById("menupng")
+
+        menubtn.onclick=function()
+        {
+            if(sidenav.style.right == "-250px")
+            {
+                sidenav.style.right = "0"
+                img.src="imgs/close.png"
+
+            }
+            else
+            {
+                sidenav.style.right = "-250px"
+                img.src="imgs/menu.png"
+            }
+        }
+    </script>
 </body>
 </html>

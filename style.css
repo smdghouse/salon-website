@@ -21,7 +21,7 @@
 {
     text-align: center;
     color: white;
-    padding: 12rem;
+    padding: 10rem;
 }
 .banner-text h1{
     font-family: 'Xanh Mono', 'monospace';
@@ -30,14 +30,14 @@
     font-weight: bold;
 }
 .banner-text p{
-    padding:2rem 0px;
+    margin-top: 40px;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: bold;
 }
 .banner-btn
 {
-    margin: 40px auto 0px;
+    margin: 50px auto 0px;
 }
 .banner-btn a{
     text-decoration: none;
@@ -75,4 +75,58 @@ width: 100%;
 {
 color: black;
 
+}
+#sidenav
+{
+    position: fixed;
+    top: 0px;
+    right: -250px;
+    background-color: #009688;
+    width: 250px;
+    height: 100vh;
+    z-index: 2;
+    transition: 0.5s;
+}
+#menu li
+{
+list-style: none;
+margin: 50px 60px;
+}
+#menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+#menu-btn
+{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background: #009688;
+    z-index: 3;
+    border-radius: 6px;
+}
+#menu-btn img
+{
+    width: 25px;
+    margin: 12px 12px;
+}
+@media screen and (max-width:770px) {
+
+    .banner-text h1
+    {
+        font-size: 44px;
+        margin: 0px auto;
+    }
+    .banner-text p
+    {
+        font-size: 15px;
+        margin-top: 18px auto;
+    }
+    .banner-btn a
+    {
+        display: block;
+        margin: 18px auto;
+    }
 }
