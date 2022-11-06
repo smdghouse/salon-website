@@ -116,17 +116,146 @@ margin: 50px 60px;
 
     .banner-text h1
     {
-        font-size: 44px;
-        margin: 0px auto;
+        font-size: 35px;
+        margin: 100px  0px auto;
+        margin-bottom: 20px;
     }
     .banner-text p
     {
         font-size: 15px;
-        margin-top: 18px auto;
+        margin-top: 10px 0px;
+        padding: 20px 0px;
+    }
+    .banner-btn
+    {
+        margin-top: 100px;
     }
     .banner-btn a
     {
         display: block;
         margin: 18px auto;
+        font-size: 15px;
+        width: 100px;
+    }
+}
+/* features */
+#features
+{
+    width: 100%;
+    padding: 70px 0px;
+}
+#features-title
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+#features-title p
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #009688;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+
+}
+#features-title p::after
+{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    content: '';
+    background: linear-gradient(#009688,#fff);
+    z-index: -1;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+#features-title h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.feature-box
+{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.feature
+{
+    flex-basis: 50%;
+}
+.feature-img
+{
+    flex-basis: 50%;
+    margin: auto;
+}
+.feature-img img
+{
+    width: 70%;
+    border-radius: 10px;
+}
+.feature h1
+{
+    text-align: left;
+    color: #009688;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.feature-desc
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.feature-logo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #009688;
+}
+.feature-logo .fa-solid
+{
+font-size: 35px;
+color: #009688;
+margin: auto 0px;
+line-height: 50px;
+text-align: center;
+}
+.feature-text
+{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    text-align: left;
+}
+@media screen and (max-width:770px) {
+    .feature
+    {
+        flex-basis:100% ;
+    }
+    .feature-img
+    {
+        flex-basis: 100%;
+    }
+    .feature-img img
+    {
+        width: 100%;
+    }
+    .feature h1
+    {
+        text-align: center;
+    }
+    #features-title h1
+    {
+        font-size: 35px;
     }
 }
