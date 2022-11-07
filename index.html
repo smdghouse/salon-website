@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>grean saloon</title>
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Xanh+Mono&display=swap');
-     </style>
+    </style>
 </head>
-<body >
+
+<body>
     <section id="banner">
         <img src="imgs/logo.png" class="logo">
         <div class="banner-text">
             <h1>Barber</h1>
-            <p>keep calm and let the hairstylist handle it </p> 
+            <p>keep calm and let the hairstylist handle it </p>
             <div class="banner-btn">
                 <a href="#"><span></span> find out</a>
                 <a href="#"><span></span> read more</a>
@@ -38,7 +40,7 @@
     </div>
     <!-- features section -->
     <section id="features">
-        <div id="features-title">
+        <div id="section-title">
             <p>
                 features
             </p>
@@ -49,7 +51,7 @@
         <div class="feature-box">
             <div class="feature">
                 <h1>
-                    Experienced staff 
+                    Experienced staff
                 </h1>
                 <div class="feature-desc">
                     <div class="feature-logo">
@@ -81,25 +83,87 @@
             </div>
         </div>
     </section>
+
+    <!-- service -->
+
+
+    <section id="service">
+        <div id="section-title">
+            <p>
+                service
+            </p>
+            <h1>
+                what we provide
+            </h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="imgs/pic-1.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h1>hair styling</h1>
+                    <hr>
+                    <p>
+                        we provide best hair cut according to you
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="imgs/pic-2.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h1>beard styling</h1>
+                    <hr>
+                    <p>
+                        we provide you famous beard styling according to you
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="imgs/pic-3.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h1>hair colouring</h1>
+                    <hr>
+                    <p>
+                        we colour your hair like the animation characters
+                    </p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <img src="imgs/pic-4.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h1>hair spa</h1>
+                    <hr>
+                    <p>
+                        hair spa make you fee like very relax and lighter
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <script>
         var menubtn = document.getElementById("menu-btn")
         var sidenav = document.getElementById("sidenav")
-        var img =  document.getElementById("menupng")
+        var img = document.getElementById("menupng")
 
-        menubtn.onclick=function()
-        {
-            if(sidenav.style.right == "-250px")
-            {
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
                 sidenav.style.right = "0"
-                img.src="imgs/close.png"
+                img.src = "imgs/close.png"
 
             }
-            else
-            {
+            else {
                 sidenav.style.right = "-250px"
-                img.src="imgs/menu.png"
+                img.src = "imgs/menu.png"
             }
         }
     </script>
 </body>
+
 </html>
